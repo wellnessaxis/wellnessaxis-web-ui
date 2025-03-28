@@ -27,7 +27,8 @@ import {
     LightBulbIcon,
     ShieldCheckIcon,
     UserIcon,
-    DocumentChartBarIcon
+    DocumentChartBarIcon,
+    SquaresPlusIcon
 } from '@heroicons/react/16/solid'
 import {
     QuestionMarkCircleIcon
@@ -45,21 +46,22 @@ const ApplicationSideBar = () => {
             </SidebarHeader>
             <SidebarBody>
                 <SidebarSection>
-                    <SidebarItem href="/profile" current={pathname.startsWith('/profile')}>
-                        <UserIcon />
-                        <SidebarLabel>Profile</SidebarLabel>
+                    <SidebarItem href="/matrix" current={pathname.startsWith('/matrix')}>
+                        <SquaresPlusIcon />
+                        <SidebarLabel>Matrix</SidebarLabel>
                     </SidebarItem>
                     <SidebarItem href="/assessment" current={pathname.startsWith('/assessment')}>
                         <DocumentChartBarIcon />
                         <SidebarLabel>Assessment</SidebarLabel>
                     </SidebarItem>
-                </SidebarSection>
-                <SidebarSection className="max-lg:hidden">
+                    <SidebarHeading></SidebarHeading>
+                    <SidebarHeading></SidebarHeading>
+                    <SidebarHeading></SidebarHeading>
                     <SidebarHeading>Dimensions</SidebarHeading>
-                    <SidebarItem href="/dimensions/condition">Condition</SidebarItem>
-                    <SidebarItem href="/dimensions/food">Food</SidebarItem>
-                    <SidebarItem href="/dimensions/sleep">Sleep</SidebarItem>
-                    <SidebarItem href="/dimensions/activity">Activity</SidebarItem>
+                    <SidebarItem href="/dimensions/condition" current={pathname.startsWith('/dimensions/condition')}>Condition</SidebarItem>
+                    <SidebarItem href="/dimensions/food" current={pathname.startsWith('/dimensions/food')}>Food</SidebarItem>
+                    <SidebarItem href="/dimensions/sleep" current={pathname.startsWith('/dimensions/sleep')}>Sleep</SidebarItem>
+                    <SidebarItem href="/dimensions/activity" current={pathname.startsWith('/dimensions/activity')}>Activity</SidebarItem>
                 </SidebarSection>
                 <SidebarSpacer />
                 <SidebarSection>

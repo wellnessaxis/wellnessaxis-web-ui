@@ -7,8 +7,8 @@ import ApplicationLayout from "./application-layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Collab Inn",
-  description: "Home of Collabs.",
+  title: "Wellness Axis",
+  description: "Home of Wellness.",
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
